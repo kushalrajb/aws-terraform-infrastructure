@@ -1,4 +1,23 @@
-terraform.tfvars
-.terraform/
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files (These contain architecture secrets. NEVER commit them!)
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
+crash.log
+crash.*.log
+
+# .tfvars files (These contain local variables and passwords)
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# OS Generated Files (Since you use the Apple ecosystem)
+.DS_Store
